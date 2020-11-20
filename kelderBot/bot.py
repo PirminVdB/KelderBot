@@ -29,7 +29,6 @@ async def roll(ctx, number_of_dice: int, number_of_sides: int):
 @roll.error
 async def roll_error(ctx, error):
     #https://discordpy.readthedocs.io/en/latest/ext/commands/api.html#ext-commands-api-errors
-    await ctx.send('kloters')
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Please select 2 numbers')
 
