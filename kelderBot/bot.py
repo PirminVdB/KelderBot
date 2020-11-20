@@ -5,13 +5,11 @@ import json
 
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 
 # Steam game price
 # https://api.steampowered.com/ISteamApps/GetAppList/v2/
 # https://store.steampowered.com/api/appdetails?appids=57690
 
-load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 JSON = os.getenv('JSON_FILENAME')
 GAMES = os.getenv('JSON_GAMESNODENAME')
