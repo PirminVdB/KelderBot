@@ -10,9 +10,9 @@ from discord.ext import commands
 # https://api.steampowered.com/ISteamApps/GetAppList/v2/
 # https://store.steampowered.com/api/appdetails?appids=57690
 
-TOKEN = os.getenv('DISCORD_TOKEN')
-JSON = os.getenv('JSON_FILENAME')
-GAMES = os.getenv('JSON_GAMESNODENAME')
+TOKEN = 'lq_mBetVqiQg8_1rgc6tq3CAqseMaxNR' #os.getenv('DISCORD_TOKEN')
+JSON = 'kelderbot.json' #os.getenv('JSON_FILENAME')
+GAMES = 'games' #os.getenv('JSON_GAMESNODENAME')
 
 bot = commands.Bot(command_prefix='!')
 with open(JSON) as gamesfile:
